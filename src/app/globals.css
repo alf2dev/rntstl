@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply flex justify-center items-center w-full cursor-pointer shadow-default text-lg transition-all duration-[0.3s] max-w-[300px] px-5 py-2.5 rounded-st border-[none];
+  }
+  .btn-color {
+    @apply bg-primary text-white;
+  }
+  .btn-color-invert {
+    @apply bg-white text-primary;
+  }
+  .btn-primary:hover {
+    @apply opacity-80;
+  }
+}
+
+:root {
+  --prime-color: #430044;
+  --primelight-color: #ad4caf;
+  --gray-color: #e8e8e8;
+  --darkgray-color: #b6b6b6;
+  --verydarkgray-color: #5e5e5e;
+  --primecancel-color: #f31260;
+  --header-height: 80px;
+  --max-width: 1100px;
+  --filter-height: 60px;
+  --last-margin: 10px;
+}
+.w-auto-important {
+  width:auto!important;
+}
+.visible-important {
+  overflow: visible!important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--prime-color);
+  background: white;
+  /* font-family: var(--font-days-one); */
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.scrolbar::-webkit-scrollbar {
+  width: 5px;
+}
+.scrolbar::-webkit-scrollbar-thumb {
+  background: #6c6c6e;
+  border-radius: 10px;
+}
+.scrolbar::-webkit-scrollbar-track {
+  background: #fff;
+  margin: 5px 0;
+}
+
+@media (max-width: 769px) {
+  :root {
+    --header-height: 90px;
+    --last-margin: 1px;
+  }
+  .trarsform-important {
+    transform: inherit!important;
+  }
+}

@@ -1,0 +1,46 @@
+.placeFree path:nth-child(1) {
+    @apply fill-none stroke-primary stroke-[0.89];
+}
+
+.placeFree path:nth-child(2),
+.placeFree path:nth-child(3),
+.placeFree path:nth-child(4) {
+    @apply fill-white stroke-primary stroke-[0.89];
+}
+
+.placeSelect path:nth-child(1) {
+    @apply fill-primelight;
+}
+
+.placeSelect path:nth-child(2),
+.placeSelect path:nth-child(3),
+.placeSelect path:nth-child(4) {
+    @apply fill-primelight stroke-primary stroke-[0.89];
+}
+
+.placeReserve path:nth-child(1) {
+    @apply fill-verydarkgray;
+}
+
+.placeReserve path:nth-child(2),
+.placeReserve path:nth-child(3),
+.placeReserve path:nth-child(4) {
+    @apply fill-verydarkgray stroke-white;
+}
+
+.placeOccupied path:nth-child(1) {
+    @apply fill-primary;
+}
+
+.placeOccupied path:nth-child(2),
+.placeOccupied path:nth-child(3),
+.placeOccupied path:nth-child(4) {
+    @apply fill-primary stroke-white;
+}
+
+/* .placeReserve path:nth-child(2),
+.placeReserve path:nth-child(4),
+.placeOccupied path:nth-child(2),
+.placeOccupied path:nth-child(4) {
+    stroke-miterlimit: 10;
+} */

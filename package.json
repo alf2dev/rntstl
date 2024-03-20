@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prestart": "npm run build",
+    "lint": "next lint",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "codegen-watch": "graphql-codegen --config codegen.ts --watch"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.0-rc.2",
+    "@next/font": "^13.5.2",
+    "@nextui-org/react": "^2.1.13",
+    "@types/node": "20.4.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "classnames": "^2.3.2",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.5.2",
+    "framer-motion": "^10.16.2",
+    "graphql": "^16.7.1",
+    "next": "13.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-qr-code": "^2.0.12",
+    "react-youtube": "^10.1.0",
+    "sharp": "^0.32.6",
+    "swiper": "^10.0.4"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "4.0.1",
+    "@graphql-codegen/client-preset": "4.0.1",
+    "@graphql-codegen/introspection": "4.0.0",
+    "@parcel/watcher": "^2.2.0",
+    "@svgr/webpack": "^8.0.1",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6"
+  }
+}
